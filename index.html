@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BMI Web App</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+        <link rel="icon" href="favicon.ico" />
+        <!-- <link rel="shortcut icon" href="/favicon.ico"> -->
+    </head>
+
+    <body>
+        <header class="hero-image">
+            <div>
+                <h1>CALCULATOR BMI</h1>
+            </div>
+        </header>
+
+        <main>
+            <!-- information BMI -->
+            <section>
+                <div class="information">   
+                    <div>
+                        <h3>
+                            ¿Qué es el IMC?
+                        </h3>
+                        <p>
+                            El IMC o Índice de Masa Corporal es la medición que valora tu peso en relación con tu altura. Puede usarse a cualquier edad y se puede calcular el IMC de mujeres, hombres y niños. El cálculo del IMC clasifica a los individuos en bajo peso, peso normal o sobrepeso, por lo que gracias a él se puede determinar si una persona tiene un peso inapropiado o poco sano para su altura. La calculadora del índice de masa corporal es una herramienta muy útil en el caso de personas se fijen un objetivo de cambio de peso, ya que ayuda a identificar cambios de peso. Es más, hoy en día se considera el cálculo del IMC un método más exacto que otros indicadores de salud, como pueden ser la talla o el peso.
+                        </p>
+                    </div>
+                    <img src="./img/imgInfo.png" alt="">
+                </div>
+            </section>
+
+            <!-- paralax -->
+            <section>
+                <div class="cover parallax"></div>
+            </section>
+
+            <!-- card calculate -->
+            <section class="container-card">
+                <div class="card-content">
+                    <header>
+                        <h1>Calcule su índice de masa corporal</h1>
+                    </header>
+                    <div class="form">
+                        <div class="container-height">
+                            <label for="inputHeight" class="form-label">Height</label>
+                            <div>
+                                <input type="number" class="form-control" id="inputHeight">
+                                <label for="">m</label>
+                            </div>
+                        </div>
+                        <div class="container-weight">
+                            <label for="inputWeight" class="form-label">Weight</label>
+                            <div>
+                                <input type="number" class="form-control" id="inputWeight">
+                                <label for="">kg</label>
+                            </div>
+                        </div>
+                        <div class="button-main">
+                            <button type="button" class="button-design" id="calculate">Calcular</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- indicators -->
+            <section class="container-indicators">
+                <div class="indicator1 ind">
+                    <h3>Bajo peso</h3>
+                    <p>0.0 - 18.4</p>
+                </div>
+                <div class="indicator2 ind">
+                    <h3>Normal</h3>
+                    <p>18.5 - 24.9</p>
+                </div>
+                <div class="indicator3 ind">
+                    <h3>Sobrepeso</h3>
+                    <p>25 - 29.9</p>
+                </div>
+                <div class="indicator4 ind">
+                    <h3>Obesidad I</h3>
+                    <p>30 - 34.9</p>
+                </div>
+                <div class="indicator5 ind">
+                    <h3>Obesidad II</h3>
+                    <p>35 - 39.9</p>
+                </div>
+                <div class="indicator6 ind">
+                    <h3>Obesidad III</h3>
+                    <p>40 a más</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p class="h3">&copy;Sitio creado por: <i>Sifuentes Álvarez, Stevens Anderson</i></p>
+        </footer>
+        
+        <script  src="operation.js"></script>
+    </body>
+</html>
